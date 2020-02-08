@@ -4,17 +4,16 @@
     "gpu_ids": [0],
 
     "scale": 3,
-    "degradation": "DN",
+    "degradation": "BI",
     "is_train": false,
     "use_chop": true,
     "rgb_range": 255,
     "self_ensemble": false,
 
     "datasets": {
-        "test_set1": {
-            "mode": "LRHR",
-            "dataroot_HR": "./results/HR/Set5/x3",
-            "dataroot_LR": "./results/LR/LRDN/Set5/x3",
+        "test_set3": {
+            "mode": "LR",
+            "dataroot_LR": "./results/LR/MyImage",
             "data_type": "img"
         }
     },
@@ -29,6 +28,6 @@
     },
 
     "solver": {
-        "pretrained_path": "./models/SRFBN_x3_DN.pth"
+        "pretrained_path": "./models/SRFBN_x3_BI.pth"
     }
 }
